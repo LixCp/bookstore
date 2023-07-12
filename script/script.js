@@ -1,4 +1,12 @@
 const searchForm = document.querySelector('.search-form')
+const loginFormContainer = document.querySelector('.login-form-container')
+
+document.querySelector('#login-btn').onclick = ()=>{
+    loginFormContainer.classList.toggle('active')
+}
+document.querySelector('#close-login-btn').onclick = ()=>{
+    loginFormContainer.classList.remove('active')
+}
 
 document.querySelector('#search-btn').onclick = ()=>{
     searchForm.classList.toggle('active')
